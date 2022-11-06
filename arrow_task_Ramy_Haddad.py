@@ -34,24 +34,6 @@ for i in range (16,19) :
 			grid[i][j-1]="*" 
 #---------------------------------------------------------------
 
-#-------------------------Drawing the pattern ( dignal )---------
-	#center line
-for i in range (15,16) :
-	for j in range(15,31) :
-			grid[i][j]="*"
-	#upper triangle
-for i in range (12,15) :
-	x=i-11
-	for j in range(28,x+28) :
-		 grid[i][j-1]="*"
-		 
-	#lower Triangle
-for i in range (16,19) :
-	x = 18-i
-	for j in range(28+x,27,-1):
-			grid[i][j-1]="*" 
-#---------------------------------------------------------------
-
 while True :
 	#os.system('cls')
 	grid=transpose_grid(grid)
